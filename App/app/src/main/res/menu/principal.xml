@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_sync"
+        android:orderInCategory="100"
+        android:title="@string/menu_sync"
+        android:icon="@drawable/ic_menu_sync"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_deslogar"
+        android:orderInCategory="300"
+        android:title="@string/Menu_Deslogar"
+        android:icon="@drawable/icon_logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_perfil"
+        android:orderInCategory="200"
+        android:title="@string/Menu_Perfil"
+        app:showAsAction="never" />
+</menu>

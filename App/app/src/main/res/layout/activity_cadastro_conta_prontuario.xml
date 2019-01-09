@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ActivityBackGroundColors"
+    tools:context="com.example.luispaulo.ibeacons.Activities.CadastroConta_Prontuario">
+
+    <EditText
+        android:id="@+id/txtCadastroProntuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblCadastroProntuario"
+        android:layout_alignStart="@+id/lblCadastroProntuario"
+        android:layout_below="@+id/lblCadastroProntuario"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:elegantTextHeight="false"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:maxLength="9"
+        android:singleLine="false"
+        android:textAlignment="textEnd"
+        android:textColor="@color/LineShapes"
+        android:textSize="16sp"
+        android:theme="@style/LineShapeColors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblCadastroProntuario" />
+
+    <TextView
+        android:id="@+id/lblCadastroProntuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/lblLoginProntuario"
+        android:textColor="@color/LabelsColor"
+        android:textSize="16sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_icUserCadastro" />
+
+    <TextView
+        android:id="@+id/lblCadastroSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/lblCadastroSenha"
+        android:textColor="@color/LabelsColor"
+        android:textSize="16sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="@+id/lblCadastroProntuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastroProntuario" />
+
+    <EditText
+        android:id="@+id/txtCadastroSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:textAlignment="textEnd"
+        android:textColor="@color/LineShapes"
+        android:textSize="16sp"
+        android:theme="@style/LineShapeColors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblCadastroSenha" />
+
+    <TextView
+        android:id="@+id/lblCadastroConfirmSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/lblCadastroConfirmSenha"
+        android:textColor="@color/LabelsColor"
+        android:textSize="16sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="@+id/lblCadastroSenha"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastroSenha" />
+
+    <EditText
+        android:id="@+id/txtCadastroConfirmSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:textAlignment="textEnd"
+        android:textColor="@color/LineShapes"
+        android:textSize="16sp"
+        android:theme="@style/LineShapeColors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblCadastroConfirmSenha" />
+
+    <TextView
+        android:id="@+id/lblCadastroInfSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/lblCadastroSenhaConfirmacao"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txtCadastroConfirmSenha"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastroConfirmSenha" />
+
+    <ImageView
+        android:id="@+id/img_icUserCadastro"
+        android:layout_width="0dp"
+        android:layout_height="186dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user_cadastro" />
+
+    <ImageView
+        android:id="@+id/btnCadastroProsseguir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="8:8"
+        app:layout_constraintEnd_toEndOf="@+id/txtCadastroConfirmSenha"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/lblCadastroInfSenha"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/ic_nav" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.8" />
+
+</android.support.constraint.ConstraintLayout>

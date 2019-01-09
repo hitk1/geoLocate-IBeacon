@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luispaulo.ibeacons">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_beacon_ico_v3_0"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/WithoutActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activities.ScanPoolling" />
+
+        <activity
+            android:name=".Activities.CadastroConta_Prontuario"
+            android:parentActivityName=".Activities.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/WithoutActionBar" />
+
+        <activity
+            android:name=".Activities.CadastroConta_Informacoes"
+            android:parentActivityName=".Activities.CadastroConta_Prontuario"
+            android:screenOrientation="portrait"
+            android:theme="@style/WithoutActionBar" />
+
+        <activity
+            android:name=".Activities.Principal"
+            android:label="@string/title_activity_principal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activities.ServiceRasp"
+            android:theme="@style/WithoutActionBar" />
+        <activity
+            android:name=".Activities.Chooser"
+            android:theme="@style/WithoutActionBar" />
+
+        <service android:name=".Servicos_Broadcasts.Service_RaspII" />
+
+        <receiver android:name=".Servicos_Broadcasts.Receiver_Rasp">
+            <intent-filter>
+                <action android:name="execute service" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activities.Perfil"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

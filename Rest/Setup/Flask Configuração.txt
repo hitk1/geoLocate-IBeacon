@@ -1,0 +1,17 @@
+Para configurar o flask é necessário navegar ate a pasta de instalação do Flask
+1 - Comando: "cd C:\Users\HIT\PycharmProjects\Server\venv\Scripts"
+
+Logo após executar o arquivo activate (este é responsável por ativar a maquina virtual do servidor Flask)
+2 - Comando: "activate"
+
+Para que o servidor execute, no windows, é necessário setar o arquivo .py como variavel de ambiente.
+3 - Comando: "set flask_app=arquivo.py
+
+Para executar o servidor então, basta executar o comando abaixo.
+4 - Comando: "python -m flask run"
+
+Se não executar, usar o comando abaixo
+5 - Comando: "set flask_env=development"
+
+Obs: Para que o servidor fique visível na rede interna, acrescentar o código abaixo antes do comando anterior (4)
+6 - Comando: "--host=0.0.0.0" --> "python -m flask run --host=0.0.0.0"

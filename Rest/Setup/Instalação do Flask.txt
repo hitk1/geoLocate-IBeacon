@@ -1,0 +1,7 @@
+Para instalar o Flask no Windows:
+
+Primeiramente é necessário instalar os arquivos estáticos do Flask e adicioná-los ao projeto.
+Geralmente quando o Flask é instalado, no PyCharm quando a biblioteca é importada ao arquivo .py, tem a opção de instalar 
+essas dependências junto a pasta do projeto, basta instalá-las.
+
+Comando para instalar o Flask: "pip install Flask" (Depois da instalação tem opções para atualização dos pacotes do Flask)

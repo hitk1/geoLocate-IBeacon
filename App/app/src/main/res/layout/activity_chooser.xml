@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/WithoutActionBar"
+    tools:context="com.example.luispaulo.ibeacons.Activities.Chooser">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_chooser" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/chooser_btnPooling"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="228dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="8dp"
+        android:text="@string/Chooser_btnPooling"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/chooser_btnService"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/chooser_btnService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="228dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="8dp"
+        android:text="@string/Chooser_btnService"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

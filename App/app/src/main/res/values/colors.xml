@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">@color/ActivityBackGroundColors</color>
+    <color name="colorAccent">@color/LabelsColor</color>
+    <color name="LabelsColor">#97E5EF</color>
+    <color name="LineShapes">#ADACF3</color>
+    <color name="ActivityBackGroundColors">#2a235f</color>
+    <color name="PrimaryDarkMore">#201a49</color>
+</resources>

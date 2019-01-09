@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activities.Perfil">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/lblConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/PrimaryDarkMore"
+            android:elevation="6dp"
+            android:fontFamily="sans-serif"
+            android:padding="6dp"
+            android:text="@string/lblPerfilConta"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblPerfilProntuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:text="@string/lblPerfilProntuario"
+            android:textAlignment="center"
+            android:textColor="@color/LineShapes"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblConta" />
+
+        <TextView
+            android:id="@+id/txtPerfilProntuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:text="xxx"
+            android:textAlignment="center"
+            android:textColor="@color/LineShapes"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/lblConta"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/lblConta" />
+
+        <TextView
+            android:id="@+id/lblSenha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/lblPerfilSenha"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPerfilProntuario" />
+
+        <EditText
+            android:id="@+id/txtPerfilSenha"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/lblCadastroSenha"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:text="xxx"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:theme="@style/LineShapeColors"
+            app:layout_constraintBottom_toBottomOf="@+id/lblSenha"
+            app:layout_constraintEnd_toEndOf="@+id/lblConta"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilProntuario" />
+
+        <TextView
+            android:id="@+id/lblPerfilToken"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/lblPerfilToken"
+
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblSenha" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnPerfilToken"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/botao_borderradius"
+            android:elevation="16dp"
+            android:text="@string/btnPerfilToken"
+            android:textColor="@color/LabelsColor"
+            app:layout_constraintEnd_toEndOf="@+id/lblConta"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilSenha" />
+
+        <ImageView
+            android:id="@+id/imgPerfilGerado"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/lblConta"
+            app:layout_constraintHorizontal_bias="0.479"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilSenha"
+            app:srcCompat="@drawable/ic_menu_save" />
+
+        <TextView
+            android:id="@+id/lblPerfilPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/PrimaryDarkMore"
+            android:elevation="6dp"
+            android:fontFamily="sans-serif"
+            android:padding="6dp"
+            android:text="@string/lblPerfilPerfil"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPerfilToken" />
+
+        <TextView
+            android:id="@+id/lblPerfilNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/lblPerfilNome"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPerfilPerfil" />
+
+        <EditText
+            android:id="@+id/txtPerfilNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:maxLength="40"
+            android:padding="8dp"
+            android:text="xxx"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:theme="@style/LineShapeColors"
+            android:hint="@string/hintPerfilNome"
+            app:layout_constraintEnd_toEndOf="@+id/lblPerfilPerfil"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/lblPerfilPerfil" />
+
+        <TextView
+            android:id="@+id/lblPerfilSobrenome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/lblPerfilSobrenome"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPerfilSobrenome" />
+
+        <EditText
+            android:id="@+id/txtPerfilSobrenome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:text="xxx"
+            android:maxLength="40"
+            android:hint="@string/hintPerfilSobrenome"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+
+            android:theme="@style/LineShapeColors"
+            app:layout_constraintEnd_toEndOf="@+id/lblPerfilPerfil"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilNome" />
+
+        <TextView
+            android:id="@+id/lblPerfilData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/lblPerfilData"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilSobrenome" />
+
+        <EditText
+            android:id="@+id/txtPerfilData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="date"
+            android:text="xxx"
+            android:textColor="@color/LabelsColor"
+            android:textAlignment="center"
+            android:theme="@style/LineShapeColors"
+            android:hint="xx/xx/xxxx"
+            app:layout_constraintEnd_toEndOf="@+id/lblPerfilPerfil"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilSobrenome" />
+
+        <TextView
+            android:id="@+id/lblPerfilCPF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/lblPerfilCPF"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPerfilCPF" />
+
+        <EditText
+            android:id="@+id/txtPerfilCPF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="xxx"
+            android:hint="@string/hintPerfilCPF"
+            android:textColor="@color/LabelsColor"
+            android:theme="@style/LineShapeColors"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/lblPerfilPerfil"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilData" />
+
+        <TextView
+            android:id="@+id/lblPerfilTelefone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/lblPerfilTelefone"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPerfilTelefone" />
+
+        <EditText
+            android:id="@+id/txtPerfilTelefone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="xxx"
+            android:textColor="@color/LabelsColor"
+            android:textAlignment="center"
+            android:theme="@style/LineShapeColors"
+            android:hint="@string/hintPerfilTelefone"
+            app:layout_constraintEnd_toEndOf="@+id/lblPerfilPerfil"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilCPF" />
+
+        <TextView
+            android:id="@+id/lblPerfilEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/lblPerfilEmail"
+            android:textAlignment="center"
+            android:textColor="@color/LabelsColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilTelefone" />
+
+        <EditText
+            android:id="@+id/txtPerfilEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textWebEmailAddress"
+            android:text="xxx"
+            android:hint="@string/hintPerfilEmail"
+            android:textColor="@color/LabelsColor"
+            android:textAlignment="center"
+            android:theme="@style/LineShapeColors"
+            android:maxLength="50"
+            app:layout_constraintEnd_toEndOf="@+id/lblPerfilPerfil"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilTelefone" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnPerfilSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:elevation="16dp"
+            android:background="@drawable/botao_borderradius"
+            android:text="@string/btnPerfilSalvar"
+            android:textColor="@color/LabelsColor"
+            app:layout_constraintEnd_toEndOf="@+id/lblPerfilPerfil"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfilEmail" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+</ScrollView>
